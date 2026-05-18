@@ -39,7 +39,7 @@ Example [Vite](https://vite.dev) + TypeScript app with a [Hono](https://hono.dev
 | `npm run build`   | Generate Wrangler types, run `tsc`, then production-build the app to `dist/`.                                   |
 | `npm run preview` | Generate Wrangler types, then serve the production build locally (default [http://localhost:4173](http://localhost:4173)). |
 
-## Set up your local environment
+## Set up Webflow CLI
 
 Install Webflow CLI (global install is optional; you can also run the CLI without `npx` in the export step below).
 
