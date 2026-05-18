@@ -41,7 +41,7 @@ Example [Vite](https://vite.dev) + TypeScript app with a [Hono](https://hono.dev
 
 ## Devlink
 
-The `webflow.json` `devlink` block tells the Webflow CLI where to write generated React components from your linked Webflow site. After running `webflow cloud init` (or `webflow auth login` + `webflow devlink sync`) the CLI populates `./src/devlink/` with components you can import directly into your Vite app.
+The `webflow.json` `devlink-export` block tells the Webflow CLI where to write generated React components from your linked Webflow site. After running `webflow cloud init` (or `webflow auth login` + `webflow devlink export`) the CLI populates `./src/webflow/` with components you can import directly into your Vite app.
 
 ## Learn more
 
