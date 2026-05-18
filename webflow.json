@@ -3,7 +3,7 @@
     "framework": "vite"
   },
   "devlink-export": {
-    "rootDir": "./webflow",
+    "rootDir": "./src/webflow",
     "components": ".*",
     "componentGroups": ".*",
     "ts": true,
