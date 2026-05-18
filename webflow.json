@@ -9,13 +9,5 @@
     "ts": true,
     "cssScopes": true,
     "relativeHrefRoot": "/"
-  },
-  "telemetry": {
-    "global": {
-      "allowTelemetry": true,
-      "lastPrompted": 1779129462219,
-      "version": "1.21.0"
-    }
-  },
-  "siteId": "69f4eaf4900fadf24eff1d03"
+  }
 }
