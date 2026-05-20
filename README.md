@@ -39,9 +39,37 @@ Example [Vite](https://vite.dev) + TypeScript app with a [Hono](https://hono.dev
 | `npm run build`   | Generate Wrangler types, run `tsc`, then production-build the app to `dist/`.                                   |
 | `npm run preview` | Generate Wrangler types, then serve the production build locally (default [http://localhost:4173](http://localhost:4173)). |
 
-## Devlink
+## Set up Webflow CLI
 
-The `webflow.json` `devlink` block tells the Webflow CLI where to write generated React components from your linked Webflow site. After running `webflow cloud init` (or `webflow auth login` + `webflow devlink sync`) the CLI populates `./src/devlink/` with components you can import directly into your Vite app.
+Install Webflow CLI (global install is optional; you can also run the CLI without `npx` in the export step below).
+
+```bash
+npm install -g @webflow/webflow-cli
+```
+
+Log in to Webflow and select your desired workspace from the opened browser window. You can append `--force` to reset any existing authentication.
+
+```bash
+npx webflow auth login
+```
+
+Then, install the needed dependencies.
+
+```bash
+npm install
+```
+
+Sync all the Webflow components into your local filesystem. Answer the prompts to generate and configure your `webflow.json`.
+
+```bash
+npx webflow devlink export
+```
+
+Select your desired Webflow site from the sites listed.
+
+You can also view <a href="https://developers.webflow.com/devlink/reference/overview" target="_blank" rel="noopener noreferrer">our DevLink documentation</a> to learn more about all the options, features, and supported elements.
+
+The `webflow.json` `devlink-export` block tells the Webflow CLI where to write generated React components from your linked Webflow site. After running `webflow cloud init` (or `webflow auth login` + `webflow devlink export`) the CLI populates `./src/webflow/` with components you can import directly into your Vite app.
 
 ## Learn more
 

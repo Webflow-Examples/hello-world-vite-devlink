@@ -2,8 +2,12 @@
   "cloud": {
     "framework": "vite"
   },
-  "devlink": {
-    "rootDir": "./src/devlink",
-    "cssModules": true
+  "devlink-export": {
+    "rootDir": "./webflow",
+    "components": ".*",
+    "componentGroups": ".*",
+    "ts": true,
+    "cssScopes": true,
+    "relativeHrefRoot": "/"
   }
 }
