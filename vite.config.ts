@@ -1,5 +1,6 @@
 import { defineConfig } from "vite";
 import { cloudflare } from "@cloudflare/vite-plugin";
+import react from "@vitejs/plugin-react";
 
 // When running locally, the app is served on `/`; when running in Webflow Cloud, the app will
 // be served on the configured Webflow Cloud mount path.
@@ -16,5 +17,5 @@ export default defineConfig({
     __WF_BASE_PATH__: '"/"',
     __WF_BASE_URL__: '"/"',
   },
-  plugins: [cloudflare()],
+  plugins: [cloudflare(), react()],
 });
